@@ -12,9 +12,13 @@ For more information, please check [Tuya Developer Website]
 
 · 本次实战训练营的时间比较短暂，本人没有开发过安卓app的相关经验，于是一
   开始就把项目目标设定在完成基本的app功能上
+
 · 通过阅读demo的基本代码对整个开发的app功能有了一个基本的认识
+
 · 代码里面没有对DPcommand的调用
+
 · 颜色和基本的边框布局没有改变
+
 · 美化：重新设计了图标和图标背景（简单的替换图片）
 
 
@@ -23,11 +27,17 @@ For more information, please check [Tuya Developer Website]
 
 
 · Android开发环境的配置（由于个人原因，windows配置总是出现错误，本次开发是基于linux进行的）
+
 · BUILD生成带有签名的APK
+
 · 进行了模拟器的调试、真机的测试、以及apk安装包的安装
+
 · 使用ABI接口、ADB调试
+
 · 对涂鸦的TuYa Android SDK进一步了解了
+
 · 熟悉了封装的DP功能
+
 · 熟悉了照明类的DP点定义
 
 
@@ -36,9 +46,13 @@ For more information, please check [Tuya Developer Website]
 
 
 · 涂鸦Android APP SDK自带的demo已经完成了注册、登录、配网、智能化的大部分代码
+
 · 开发过程中遇到了许多的问题，在自己查找资料和小助手以及群友们的帮助下解决问题
+
 · 对于linux下开发软件的经验有所积累、加深了对Linux的系统操作性的了解
+
 · linux开发确实相对windows更加简单（没有那么多环境变量的顾虑）
+
 · 有空还需要对apk以及软件ui界面进行美化
 
 
@@ -47,8 +61,10 @@ For more information, please check [Tuya Developer Website]
 
 
 · 一个喜欢硬件电路设计、以及lot物联网设计的嵌入式在读大学生
+
 · 迷上硬件设计已经有一段时间了，想要学习一些软件端的开发，正好
   有涂鸦lot物联网训练营可以让我了解一些软件开发的相关知识
+
 · 没有android和其他软件端的学习经验，全凭好学的态度一直走过来
 
 
