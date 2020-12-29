@@ -1,4 +1,4 @@
-//////////////////////////////readme/////////////////////////////////////////
+-------------------------------------/readme\------------------------------------
 -------------------------------------------------------------------------------
 This project is developed using Tuya App SDK, which enables you to quickly develop
     branded apps connecting and controlling smart scenarios of many devices.
