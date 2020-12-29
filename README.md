@@ -9,7 +9,7 @@ For more information, please check [Tuya Developer Website]
 
 
 
-项目说明:
+*项目说明*:
 
 
     · 本次实战训练营的时间比较短暂，本人没有开发过安卓app的相关经验，于是一
@@ -26,7 +26,7 @@ For more information, please check [Tuya Developer Website]
 
 
 
-学习所得（Android App）:
+*学习所得（Android App）*:
 
 
     · Android开发环境的配置（由于个人原因，windows配置总是出现错误，本次开发是基于linux进行的）
@@ -46,7 +46,7 @@ For more information, please check [Tuya Developer Website]
 
 
 
-心得:
+*心得*:
 
 
     · 涂鸦Android APP SDK自带的demo已经完成了注册、登录、配网、智能化的大部分代码
@@ -62,7 +62,7 @@ For more information, please check [Tuya Developer Website]
 
 
 
-个人背景:
+*个人背景*:
 
 
     · 一个喜欢硬件电路设计、以及lot物联网设计的嵌入式在读大学生
@@ -76,7 +76,7 @@ For more information, please check [Tuya Developer Website]
 
 
 
-作品概述:
+*作品概述*:
 
 
     本人是一名在读的嵌入式专业大学生，平时也喜欢鼓捣一些硬件电路之类的小设计，也参加过立创的电路
