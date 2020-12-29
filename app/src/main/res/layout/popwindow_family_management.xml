@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popwindow_family_management_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@+id/popwindow_family_management_rv"
+        android:id="@+id/popwindow_family_management_txt"
+        android:gravity="center_vertical"
+        android:text="@string/family_index_title"
+        android:textSize="@dimen/ts_20"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh_60" />
+
+
+</RelativeLayout>

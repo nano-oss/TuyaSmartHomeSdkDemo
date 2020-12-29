@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        app:navigationIcon="@drawable/tysmart_back"
+        app:title="Playback"
+        app:titleTextColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/camera_video_view_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@id/toolbar_view">
+
+        <com.tuya.smart.camera.middleware.widget.TuyaCameraView
+            android:id="@+id/camera_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/camera_mute"
+            android:layout_width="@dimen/wh_28"
+            android:layout_height="@dimen/wh_28"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:src="@drawable/camera_mute_btn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timeline_layout"
+        android:layout_below="@+id/camera_video_view_Rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.tuya.smart.android.camera.timeline.TuyaTimelineView
+            app:timeScaleColor="@color/black"
+            app:linesColor="@color/black"
+            app:bubbleColor="@color/gray"
+            app:bubbleTextColor="@color/white"
+            app:topTextMargin="10dp"
+            app:bottomTextMargin="5dp"
+            android:id="@+id/timeline"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"></com.tuya.smart.android.camera.timeline.TuyaTimelineView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/query_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeline_layout"
+        android:orientation="horizontal"
+        android:padding="@dimen/mg_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Query Date:"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/date_input_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2019/3/2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/query_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/query_ll"
+        android:layout_marginLeft="@dimen/mg_10"
+        android:layout_marginRight="@dimen/mg_10"
+        android:text="query"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/query_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/query_btn"
+        android:layout_marginLeft="@dimen/mg_10"
+        android:layout_marginRight="@dimen/mg_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/mg_10">
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/pause_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pause"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/resume_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="resume"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

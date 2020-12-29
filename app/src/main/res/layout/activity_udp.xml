@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    tools:context=".base.activity.UDPActivity">
+
+    <include
+        android:id="@+id/action_bar_layout"
+        layout="@layout/toolbar_top_view" />
+
+    <TextView
+        android:id="@+id/tv_send_udp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mg_48"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="开启硬件调试日志"
+        android:textColor="@color/color_303030"
+        android:textSize="@dimen/ts_15" />
+
+    <TextView
+        android:id="@+id/tv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mg_48"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="停止接受数据"
+        android:textColor="@color/color_303030"
+        android:textSize="@dimen/ts_15" />
+
+    <TextView
+        android:id="@+id/tv_port"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mg_48"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Debug日志"
+        android:textColor="@color/color_303030"
+        android:textSize="@dimen/ts_15" />
+
+    <ScrollView
+        android:id="@+id/test_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/test_log"
+            style="@style/TextView.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fl_opertion"
+            android:layout_marginLeft="@dimen/mg_15"
+            android:background="@null"
+            android:lineSpacingExtra="@dimen/mg_4"
+            android:textColor="@color/green"
+            android:textSize="@dimen/ts_12" />
+    </ScrollView>
+</LinearLayout>

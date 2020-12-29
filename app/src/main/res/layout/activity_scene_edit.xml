@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/bt_add_scene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加场景" />
+
+    <Button
+        android:id="@+id/bt_get_devList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取设备" />
+
+    <Button
+        android:id="@+id/bt_get_city_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取城市列表" />
+
+    <Button
+        android:id="@+id/bt_get_scene_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取场景列表" />
+
+    <Button
+        android:id="@+id/bt_get_condition_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取条件列表" />
+
+    <TextView
+        android:id="@+id/tv_post_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

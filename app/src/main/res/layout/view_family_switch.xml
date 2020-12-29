@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/view_family_switch_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+        android:drawablePadding="@dimen/mg_10"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_20" />
+
+</RelativeLayout>

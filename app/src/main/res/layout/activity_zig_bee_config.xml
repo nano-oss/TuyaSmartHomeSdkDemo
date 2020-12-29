@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/action_bar_layout"
+        layout="@layout/toolbar_top_view" />
+
+
+    <Button
+        android:id="@+id/btn_start_config_gw"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="开始网关配网" />
+
+    <Button
+        android:id="@+id/btn_start_config_sub_dev"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="开始子设备配网" />
+
+
+    <Button
+        android:id="@+id/btn_local_scene"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="开始本地场景" />
+
+</LinearLayout>

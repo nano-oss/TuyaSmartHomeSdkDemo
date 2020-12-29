@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_load_more_root"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:text="正在加载～"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/end_tv"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:text="已经到底咯～"
+        android:textColor="#FFB3B3BB"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

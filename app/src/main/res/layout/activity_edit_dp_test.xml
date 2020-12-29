@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_home"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/action_bar_layout"
+        layout="@layout/toolbar_top_view" />
+    <ScrollView
+        android:id="@+id/test_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/test_action"
+        android:layout_below="@+id/action_bar_layout">
+
+        <TextView
+            android:id="@+id/test_log"
+            style="@style/TextView.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/test_action"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mg_15"
+        android:orientation="horizontal">
+
+
+        <Button android:id="@+id/btn_add"
+                style="@style/Button.Normal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/add"
+        />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"/>
+
+        <Button android:id="@+id/btn_save"
+                style="@style/Button.Normal"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/save"
+        />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"/>
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/Button.Normal"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/clear"/>
+    </LinearLayout>
+
+</RelativeLayout>

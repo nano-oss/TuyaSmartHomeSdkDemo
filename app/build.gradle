@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.naonao.test"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "naonao_V2.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a","x86"
+        }
+    }
+    android.applicationVariants.all{
+        variant->
+            variant.outputs.all{
+                //此处指定生成的apk包名
+                outputFileName = "naonaoIOT.apk"
+            }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/android-offlinelog-api_release.kotlin_module'
+        exclude 'META-INF/android-offlinelog-upload_release.kotlin_module'
+        pickFirst 'lib/*/libc++_shared.so'
+        pickFirst 'lib/*/libgnustl_shared.so'
+        doNotStrip '*/mips/*.so'
+        doNotStrip '*/mips64/*.so'
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+        //***** required ****//
+        implementation 'com.alibaba:fastjson:1.1.67.android'
+        implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.14.9'
+
+        // latest release version
+        implementation 'com.tuya.smart:tuyasmart:3.20.0'
+
+        implementation 'com.tuya.smart:tuyasmart-shortcutparser:0.0.1'
+        implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+        //***** required ****//
+
+        //***** not required ****//
+        implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+        implementation 'androidx.appcompat:appcompat:1.2.0'
+        implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+        implementation 'org.greenrobot:eventbus:3.0.0'
+        implementation 'com.wnafee:vector-compat:1.0.5'
+        implementation 'com.jakewharton:butterknife:10.0.0'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+        implementation 'com.kyleduo.switchbutton:library:1.4.2'
+        implementation "androidx.recyclerview:recyclerview:1.1.0"
+        implementation 'com.squareup.picasso:picasso:2.5.2'
+        implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
+        //ipc sdk
+        implementation 'com.tuya.smart:tuyasmart-ipc-camera-middleware:3.20.0'
+        implementation 'com.tuya.smart:tuyasmart-ipc-camera-v2:3.20.0'
+        implementation 'com.tuya.smart:tuyasmart-ipc-camera-utils:3.20.0'
+        implementation 'com.tuya.smart:tuyasmart-ipc-camera-diff-api:3.20.0'
+        implementation 'com.tuya.smart:tuyasmart-ipc-camera-outside:3.20.0'
+        implementation 'com.tuya.smart:tuyasmart-base-utils:3.18.0r143-rc.9'
+        //rxjava
+        implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+        implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+        //option:
+        //camera msg center
+        implementation 'com.tuya.smart:tuyasmart-ipc-camera-message:3.13.0r128'
+        //device control
+        implementation 'com.tuya.smart:tuyasmart-ipc-devicecontrol:3.17.0r139'
+        //encrypted image
+        implementation 'com.tuya.smart:tuyasmart-imagepipeline-okhttp3:0.0.1'
+        implementation 'com.facebook.fresco:fresco:2.2.0'
+        //timeline view
+        implementation 'com.tuya.smart:tuyasmart-ipc-camera-timeline:1.0.0'
+
+        // For QRCode Login
+        implementation 'com.google.zxing:core:3.3.3'
+
+        //***** not required ****//
+        implementation 'androidx.multidex:multidex:2.0.1'
+    }
+    ndkVersion '22.0.7026061'
+}

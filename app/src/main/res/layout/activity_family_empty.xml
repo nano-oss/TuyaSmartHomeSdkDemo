@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/iv_none_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ty_nolist_logo" />
+
+        <TextView
+            android:id="@+id/tv_none_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_none_data"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/ty_no_data"
+            android:textColor="@color/text_color2"
+            android:textSize="@dimen/ts_16" />
+
+        <TextView
+            android:id="@+id/activity_family_empty_btn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_none_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_add_share_none_bg"
+            android:gravity="center"
+            android:text="@string/family_empty_btn_text"
+            android:textColor="@color/text_color2" />
+
+
+        <TextView
+            android:id="@+id/activity_family_logout_btn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/activity_family_empty_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_add_share_none_bg"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="@color/text_color2" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

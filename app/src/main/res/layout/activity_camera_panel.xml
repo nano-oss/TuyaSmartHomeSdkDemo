@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        app:navigationIcon="@drawable/tysmart_back"
+        app:title="Camera"
+        app:titleTextColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/camera_video_view_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_view">
+
+        <com.tuya.smart.camera.middleware.widget.TuyaCameraView
+            android:id="@+id/camera_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+        <ImageView
+            android:id="@+id/camera_mute"
+            android:layout_width="@dimen/wh_28"
+            android:layout_height="@dimen/wh_28"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:src="@drawable/camera_mute_btn" />
+
+        <TextView
+            android:id="@+id/camera_quality"
+            android:layout_width="@dimen/wh_60"
+            android:layout_height="@dimen/wh_28"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/camera_mute"
+            android:background="@drawable/camera_shape_wirlesswake"
+            android:gravity="center"
+            android:text="HD"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_12" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/camera_control_board"
+        layout="@layout/camera_panel_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/camera_video_view_Rl" />
+
+</RelativeLayout>

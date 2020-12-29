@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tuya.smart.android.demo.camera.CameraCloudVideoActivity">
+
+
+    <com.tuya.smart.camera.middleware.widget.TuyaCameraView
+        android:id="@+id/camera_cloud_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <ProgressBar
+        android:id="@+id/camera_cloud_video_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>

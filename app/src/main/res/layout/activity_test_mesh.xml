@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".base.activity.TestMeshActivity">
+
+    <Button
+        android:id="@+id/add_mesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_15"
+        android:layout_marginRight="@dimen/mg_15"
+        android:text="添加mesh"
+        android:textSize="@dimen/ts_15" />
+
+    <Button
+        android:id="@+id/remove_mesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_15"
+        android:layout_marginRight="@dimen/mg_15"
+        android:text="移除所有mesh"
+        android:textSize="@dimen/ts_15" />
+
+    <Button
+        android:id="@+id/publish_dps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_15"
+        android:layout_marginRight="@dimen/mg_15"
+        android:text="下发数据"
+        android:textSize="@dimen/ts_15" />
+
+    <Button
+        android:id="@+id/publish_raw_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_15"
+        android:layout_marginRight="@dimen/mg_15"
+        android:text="下发RAW"
+        android:textSize="@dimen/ts_15" />
+
+    <Button
+        android:id="@+id/btn_upgrade_mesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mg_15"
+        android:layout_marginRight="@dimen/mg_15"
+        android:text="升级固件"
+        android:textSize="@dimen/ts_15" />
+
+    <ScrollView
+        android:id="@+id/test_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="@dimen/mg_15"
+        android:layout_marginRight="@dimen/mg_15"
+        android:layout_marginTop="@dimen/mg_5"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/test_log"
+            style="@style/TextView.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green" />
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/wh_60"
+    android:paddingLeft="@dimen/mg_15"
+    android:paddingRight="@dimen/mg_15"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/recycler_family_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/ty_change_login_keyword"
+        android:textColor="?attr/list_primary_color"
+        android:textSize="@dimen/ts_20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableRight="@drawable/arrow_more"
+        android:drawablePadding="6dp"
+        android:textColor="?attr/list_sub_color"
+        android:textSize="14sp" />
+
+</RelativeLayout>

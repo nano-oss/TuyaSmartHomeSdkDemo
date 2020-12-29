@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="center_vertical"
+    android:layout_height="@dimen/wh_60">
+
+    <TextView
+        android:id="@+id/recycler_family_default_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/ts_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <CheckBox
+        android:id="@+id/recycler_family_default_checkbox"
+        android:layout_alignParentRight="true"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

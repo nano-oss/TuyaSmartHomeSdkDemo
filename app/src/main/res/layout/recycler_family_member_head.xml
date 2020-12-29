@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/mg_30"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/family_info_member_head_txt"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/ts_20" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/action_bar_layout"
+        layout="@layout/toolbar_top_view" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/family_info_rv"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/mg_60"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar_layout" />
+
+
+    <TextView
+        android:background="@color/white"
+        android:textSize="@dimen/ts_20"
+        android:gravity="center"
+        android:text="@string/family_info_remove_txt"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/family_info_remove"
+        android:layout_width="match_parent"
+        android:textColor="@color/gray"
+        android:layout_height="@dimen/wh_60" />
+
+
+</RelativeLayout>

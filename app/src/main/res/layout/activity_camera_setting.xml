@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.tuya.smart.android.demo.camera.CameraSettingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        app:navigationIcon="@drawable/tysmart_back"
+        app:title="Set"
+        app:titleTextColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_show_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_show_publish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_resetore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpResetore.ID"/>
+
+            <Button
+                android:id="@+id/btn_sdstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpSDStatus.ID"/>
+
+            <Button
+                android:id="@+id/btn_storage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpSDStorge.ID"/>
+
+            <Button
+                android:id="@+id/btn_sd_format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpSDFormat.ID"/>
+
+            <Button
+                android:id="@+id/btn_sd_format_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpSDFormatStatus.ID"/>
+
+            <Button
+                android:id="@+id/btn_record_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpSDRecordModel.ID"/>
+
+            <Button
+                android:id="@+id/btn_record_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpSDRecordSwitch.ID"/>
+
+            <Button
+                android:id="@+id/btn_basic_flip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpBasicFlip.ID"/>
+
+            <Button
+                android:id="@+id/btn_motion_sensitivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpMotionSensitivity.ID"/>
+
+            <Button
+                android:id="@+id/btn_wireless_batterylock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpWirelessBatterylock.ID"/>
+
+            <Button
+                android:id="@+id/btn_wireless_electricity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpWirelessElectricity.ID"/>
+
+            <Button
+                android:id="@+id/btn_wireless_lowpower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpWirelessLowpower.ID"/>
+            <Button
+                android:id="@+id/btn_wireless_powermode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DpWirelessPowermode.ID"/>
+
+            <Button
+                android:id="@+id/btn_wireless_wakeup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="WAKE.ID"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

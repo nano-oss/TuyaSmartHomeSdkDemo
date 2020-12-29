@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/app_bg_color">
+
+    <include
+        android:id="@+id/action_bar_layout"
+        layout="@layout/toolbar_top_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar_layout"
+        android:layout_marginTop="@dimen/mg_80"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/wifi_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/ty_add_device_wifi"
+            />
+        <Button
+            android:id="@+id/gateway_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/ty_add_device_gateway"
+            />
+        <Button
+            android:id="@+id/grcode_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/ty_add_device_grcode"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

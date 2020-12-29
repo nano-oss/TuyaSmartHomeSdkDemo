@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/action_bar_layout"
+        layout="@layout/toolbar_top_view"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_operator_value"
+        android:layout_marginTop="@dimen/mg_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/ll_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mg_20"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <com.tuya.smart.android.demo.test.widget.NumberPicker
+            android:id="@+id/np_operators"
+            nternalLayout="@layout/number_picker_with_selector_wheel"
+            android:layout_width="100dp"
+            android:layout_height="108dp"
+            android:layout_marginLeft="@dimen/mg_50"
+            android:background="@null"
+            android:theme="@style/SampleTheme"/>
+        <com.tuya.smart.android.demo.test.widget.NumberPicker
+            android:id="@+id/np_operator_value"
+            nternalLayout="@layout/number_picker_with_selector_wheel"
+            android:layout_width="200dp"
+            android:layout_height="108dp"
+            android:background="@null"
+            android:theme="@style/SampleTheme"/>
+    </LinearLayout>
+
+
+</LinearLayout>
